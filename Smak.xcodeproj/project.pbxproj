@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BBBD51433C9778B35317F0E /* Pods_Smak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462FE2761C376907F5774D36 /* Pods_Smak.framework */; };
 		6770162521BC4A2800E8901D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6770162421BC4A2800E8901D /* AppDelegate.swift */; };
 		6770162721BC4A2800E8901D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6770162621BC4A2800E8901D /* ViewController.swift */; };
 		6770162A21BC4A2800E8901D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6770162821BC4A2800E8901D /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07F34F19CA680D00AF890525 /* Pods-Smak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smak.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smak/Pods-Smak.debug.xcconfig"; sourceTree = "<group>"; };
+		462FE2761C376907F5774D36 /* Pods_Smak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6770162121BC4A2800E8901D /* Smak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6770162421BC4A2800E8901D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6770162621BC4A2800E8901D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		6770162B21BC4A2900E8901D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6770162E21BC4A2900E8901D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6770163021BC4A2900E8901D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D65907319338C3B544AC314F /* Pods-Smak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smak.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smak/Pods-Smak.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BBBD51433C9778B35317F0E /* Pods_Smak.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E3489076ED5137A69DD5396 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				462FE2761C376907F5774D36 /* Pods_Smak.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6770161821BC4A2800E8901D = {
 			isa = PBXGroup;
 			children = (
 				6770162321BC4A2800E8901D /* Smak */,
 				6770162221BC4A2800E8901D /* Products */,
+				F69F4983C746A89C71FD9E8C /* Pods */,
+				5E3489076ED5137A69DD5396 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = Smak;
 			sourceTree = "<group>";
 		};
+		F69F4983C746A89C71FD9E8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07F34F19CA680D00AF890525 /* Pods-Smak.debug.xcconfig */,
+				D65907319338C3B544AC314F /* Pods-Smak.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6770163321BC4A2900E8901D /* Build configuration list for PBXNativeTarget "Smak" */;
 			buildPhases = (
+				84ABF792BB6543C033FEF97F /* [CP] Check Pods Manifest.lock */,
 				6770161D21BC4A2800E8901D /* Sources */,
 				6770161E21BC4A2800E8901D /* Frameworks */,
 				6770161F21BC4A2800E8901D /* Resources */,
+				B5C9D00EF11CDDE656AD6264 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84ABF792BB6543C033FEF97F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smak-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5C9D00EF11CDDE656AD6264 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Smak/Pods-Smak-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smak/Pods-Smak-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6770161D21BC4A2800E8901D /* Sources */ = {
@@ -280,6 +351,7 @@
 		};
 		6770163421BC4A2900E8901D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F34F19CA680D00AF890525 /* Pods-Smak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +370,7 @@
 		};
 		6770163521BC4A2900E8901D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D65907319338C3B544AC314F /* Pods-Smak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
