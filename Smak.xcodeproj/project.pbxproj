@@ -13,6 +13,7 @@
 		6770162A21BC4A2800E8901D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6770162821BC4A2800E8901D /* Main.storyboard */; };
 		6770162C21BC4A2900E8901D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6770162B21BC4A2900E8901D /* Assets.xcassets */; };
 		6770162F21BC4A2900E8901D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6770162D21BC4A2900E8901D /* LaunchScreen.storyboard */; };
+		6770163F21BC4F1300E8901D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6770163E21BC4F1300E8901D /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,9 @@
 		6770162B21BC4A2900E8901D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6770162E21BC4A2900E8901D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6770163021BC4A2900E8901D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6770163C21BC4F1200E8901D /* Smak-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smak-Bridging-Header.h"; sourceTree = "<group>"; };
+		6770163D21BC4F1300E8901D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		6770163E21BC4F1300E8901D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		D65907319338C3B544AC314F /* Pods-Smak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smak.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smak/Pods-Smak.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,8 +79,19 @@
 				6770162B21BC4A2900E8901D /* Assets.xcassets */,
 				6770162D21BC4A2900E8901D /* LaunchScreen.storyboard */,
 				6770163021BC4A2900E8901D /* Info.plist */,
+				6770163621BC4E9400E8901D /* Supporting Files */,
 			);
 			path = Smak;
+			sourceTree = "<group>";
+		};
+		6770163621BC4E9400E8901D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6770163D21BC4F1300E8901D /* SWRevealViewController.h */,
+				6770163E21BC4F1300E8901D /* SWRevealViewController.m */,
+				6770163C21BC4F1200E8901D /* Smak-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		F69F4983C746A89C71FD9E8C /* Pods */ = {
@@ -122,6 +137,7 @@
 				TargetAttributes = {
 					6770162021BC4A2800E8901D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -208,6 +224,7 @@
 			files = (
 				6770162721BC4A2800E8901D /* ViewController.swift in Sources */,
 				6770162521BC4A2800E8901D /* AppDelegate.swift in Sources */,
+				6770163F21BC4F1300E8901D /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +371,7 @@
 			baseConfigurationReference = 07F34F19CA680D00AF890525 /* Pods-Smak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SC2QKC7U99;
 				INFOPLIST_FILE = Smak/Info.plist;
@@ -363,6 +381,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Anna-Kaukh.Smak";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Smak/Supporting Files/Smak-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -373,6 +393,7 @@
 			baseConfigurationReference = D65907319338C3B544AC314F /* Pods-Smak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SC2QKC7U99;
 				INFOPLIST_FILE = Smak/Info.plist;
@@ -382,6 +403,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Anna-Kaukh.Smak";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Smak/Supporting Files/Smak-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
