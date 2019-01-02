@@ -18,6 +18,7 @@
 		6797F62621DB8FD900074155 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797F62521DB8FD800074155 /* GradientView.swift */; };
 		6797F62921DB9A5F00074155 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797F62821DB9A5F00074155 /* Constants.swift */; };
 		6797F62B21DBA4BE00074155 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797F62A21DBA4BE00074155 /* LoginVC.swift */; };
+		6797F62F21DCE05D00074155 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797F62E21DCE05D00074155 /* CreateAccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		6797F62521DB8FD800074155 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		6797F62821DB9A5F00074155 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6797F62A21DBA4BE00074155 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		6797F62E21DCE05D00074155 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		D65907319338C3B544AC314F /* Pods-Smak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smak.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smak/Pods-Smak.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 				6770164521BD223200E8901D /* ChannelVC.swift */,
 				6770164321BD221F00E8901D /* ChatVC.swift */,
 				6797F62A21DBA4BE00074155 /* LoginVC.swift */,
+				6797F62E21DCE05D00074155 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				6770164621BD223200E8901D /* ChannelVC.swift in Sources */,
 				6770164421BD221F00E8901D /* ChatVC.swift in Sources */,
+				6797F62F21DCE05D00074155 /* CreateAccountVC.swift in Sources */,
 				6797F62B21DBA4BE00074155 /* LoginVC.swift in Sources */,
 				6797F62621DB8FD900074155 /* GradientView.swift in Sources */,
 				6770162521BC4A2800E8901D /* AppDelegate.swift in Sources */,
